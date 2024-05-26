@@ -1,0 +1,17 @@
+<app-header headerTitle="action sheet"></app-header>
+
+
+
+
+
+<ion-content class="ion-padding">
+<ion-button (click)="onClick()"  expand="block">
+  mostart action sheet
+</ion-button>
+
+<ion-button id="open-action-sheet" expand="block">Abrir</ion-button>
+<ion-action-sheet trigger="open-action-sheet" header="Actions" [buttons]="actionSheetButtons"></ion-action-sheet>
+
+
+
+</ion-content>

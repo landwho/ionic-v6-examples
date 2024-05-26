@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>{{name}} - {{country}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-button (click)="salir()" expand="block"  shape="round">
+    Salir
+  </ion-button>
+
+  
+
+  <ion-button (click)="salirConArgumentos()" expand="block"  shape="round">
+    Salir con argumentos
+  </ion-button>
+
+
+</ion-content>

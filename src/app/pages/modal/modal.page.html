@@ -1,0 +1,14 @@
+<app-header headerTitle="Modal"></app-header>
+
+<ion-content class="ion-padding" [fullscreen]="true">
+
+  <ion-button (click)="mostarModal()" expand="block"  shape="round">
+    mostar modal
+  </ion-button>
+
+  <ion-card>
+{{this.respuesa?.name}} -  {{this.respuesa?.country}}
+
+  </ion-card>
+
+</ion-content>

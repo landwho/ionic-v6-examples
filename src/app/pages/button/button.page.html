@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>button</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button color="danger">
+        <ion-icon slot="icon-only" name="heart-outline"></ion-icon></ion-button>
+    </ion-buttons>
+
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-button>Default</ion-button> <ion-button [disabled]="true">Disabled</ion-button>
+
+  <ion-button>Default</ion-button>
+<ion-button shape="round">Round</ion-button>
+<ion-button>
+  <ion-icon slot="icon-only" name="heart"></ion-icon>
+</ion-button>
+<ion-button shape="round">
+  <ion-icon slot="icon-only" name="heart"></ion-icon>
+</ion-button>
+
+</ion-content>

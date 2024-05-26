@@ -1,0 +1,19 @@
+<app-header headerTitle="alert"></app-header>
+
+<ion-content  class="ion-padding">
+  
+  <ion-button (click)="onClick()" expand="block" fill="clear" shape="round">
+    Click me
+  </ion-button>
+
+
+  <ion-button id="present-alert" expand="block">Click Me</ion-button>
+  <ion-alert
+    trigger="present-alert"
+    header="Alert!"
+    [buttons]="alertButtons"
+    (didDismiss)="setResult($event)"
+  ></ion-alert>
+
+
+</ion-content>

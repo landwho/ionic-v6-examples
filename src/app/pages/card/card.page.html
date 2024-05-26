@@ -1,0 +1,61 @@
+<app-header headerTitle="card"></app-header>
+
+<ion-content class="ion-padding">
+ 
+  
+
+
+  <ion-grid fixed="false">
+
+    <ion-row>
+
+      <ion-col size="12">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Card Title</ion-card-title>
+            <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+          </ion-card-header>
+        
+          <ion-card-content>
+            Here's a small text description for the card content. Nothing more, nothing less.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="12" sizeLg="4" size-md="3" size-sm="6"
+      *ngFor="let item of [1,1,1,1,1,1,1,1,1,1,1,1]">
+    
+        <ion-card-header>
+          <ion-card-title>Awesome Title</ion-card-title>  
+          <ion-card-subtitle>Awesome Subtitle</ion-card-subtitle>
+        </ion-card-header>
+
+        <ion-card>
+          <ion-img src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"></ion-img>
+        </ion-card>
+  
+        <ion-card-content>
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </ion-card-content>
+
+        <!-- <ion-card>
+          <img alt="Silhouette of mountains" src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg" />
+          <ion-card-header>
+            <ion-card-title>Card Title</ion-card-title>
+            <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+          </ion-card-header>
+        
+          <ion-card-content>
+            Here's a small text description for the card content. Nothing more, nothing less.
+          </ion-card-content>
+        </ion-card> -->
+
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+</ion-content>

@@ -1,0 +1,72 @@
+<app-header headerTitle="Input"></app-header>
+
+<ion-content class="ion-padding">
+
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="12">
+
+
+        <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle>Awesome Subtitle</ion-card-subtitle>
+            <ion-card-title>Login Form</ion-card-title>
+          </ion-card-header>
+          <ion-list>
+            <!-- <ion-list-header>
+              <ion-label>New This Week</ion-label>
+              <ion-button>See All</ion-button>
+            </ion-list-header>
+            <ion-item>
+              <ion-label>Nombre:</ion-label>
+              <ion-input type="text" placeholder="Escriba su nombre"></ion-input>
+            </ion-item> -->
+        
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="ion-padding">
+        
+              <ion-item>
+                <ion-input
+              label="Codigo Cliente"
+              labelPlacement="stacked"
+              formControlName="codigo"
+              [clearInput]="true"
+              placeholder="ingresa codigo de cliente"
+              value="D-888"
+            >
+            </ion-input>
+              </ion-item>
+              
+              <ion-item>
+                <ion-label position="floating">E-Mail <ion-text color="danger">*</ion-text></ion-label>
+                <ion-input labelPlacement="stacked"required formControlName="email" type="email" [clearInput]="true"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-label position="floating">Password <ion-text color="danger">*</ion-text></ion-label>
+                <ion-input required formControlName="password" type="password" [clearInput]="true"></ion-input>
+              </ion-item>
+              <ion-button color="twitter" expand="block" color="primary" type="submit" [disabled]="loginForm.invalid" fill="clear" shape="round">
+                Login
+              </ion-button>
+            </form>
+            
+          </ion-list>
+  
+        </ion-card>
+
+
+     
+
+
+
+      </ion-col>
+     
+    </ion-row>
+  </ion-grid>
+
+
+
+
+
+
+  
+</ion-content>

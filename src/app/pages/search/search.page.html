@@ -1,0 +1,22 @@
+<app-header headerTitle="Search"></app-header>
+
+
+<ion-content [fullscreen]="true">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title size="large">search</ion-title>
+    </ion-toolbar>
+    <ion-searchbar placeholder="Buscar albumn"  (ionChange)="onSearchChange($event)" [debounce]="250" ></ion-searchbar>
+  </ion-header>
+
+
+  <ion-list>
+    <ion-item *ngFor="let a of albumnes | filtro:textoBuscar">
+      <ion-label>
+        <p>{{a.title}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+
+</ion-content>

@@ -1,0 +1,14 @@
+<app-header headerTitle="Refresher"></app-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)" pullFactor="0.8" pullMin="60" pullMax="120">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+  <ion-list *ngFor="let item of items; let i = index">
+    <ion-label>item {{i+1}}</ion-label>
+  </ion-list>
+
+  
+</ion-content>

@@ -1,0 +1,29 @@
+<app-header headerTitle="Fab"></app-header>
+
+<ion-content class="ion-padding">
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button color="dark"><ion-icon color="primary" name="logo-ionic"></ion-icon></ion-fab-button>
+      <ion-fab-button color="dark"><ion-icon color="danger" name="logo-angular"></ion-icon></ion-fab-button>
+      <ion-fab-button color="dark"><ion-icon color="primary" name="logo-docker"></ion-icon></ion-fab-button>
+      <ion-fab-button color="dark"><ion-icon name="logo-octocat"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+  <ion-list>
+    <ion-item *ngFor="let item of data; let i = index">
+      <ion-label>Item {{i+1}}</ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="github">
+    <ion-title>Footer</ion-title>
+  </ion-toolbar>
+</ion-footer>

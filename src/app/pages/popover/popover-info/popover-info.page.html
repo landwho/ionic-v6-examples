@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>popover-info</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <!-- <ion-item [button]="true" [detail]="false">Option 1</ion-item>
+    <ion-item [button]="true" [detail]="false">Option 2</ion-item>
+    <ion-item [button]="true" id="nested-trigger">More options...</ion-item> -->
+
+    <ion-item *ngFor="let i of items" (click)="onClick(i)">{{i}}</ion-item>
+
+    <!-- <ion-popover trigger="nested-trigger" [dismissOnSelect]="true" side="end">
+      <ng-template>
+        <ion-content>
+          <ion-list>
+            <ion-item [button]="true" [detail]="false">Nested option</ion-item>
+          </ion-list>
+        </ion-content>
+      </ng-template>
+    </ion-popover> -->
+  </ion-list>
+</ion-content>
