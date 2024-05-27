@@ -23,6 +23,7 @@ IOS DEVELOPMENT XCODE
 xcode-select --install
 
 
+DESPLIEGUE
 
 install capacitor
  npm i -g cordova
@@ -31,6 +32,9 @@ ionic integrations enable cordova
 ionic cordova platform add ios
 ionic cordova platform add android
 
+npm i -g cordova-res
+ionic cordova resources
+ionic cordova resources --force
 
 
 DESPLEGAR PLAY STORE 
